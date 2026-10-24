@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary-green: #0E2A22;
+    --color-primary-green-dark: #071914;
+    --color-primary-green-light: #163B31;
+    --color-gold: #C9A050;
+    --color-gold-light: #DFBA73;
+    --color-gold-dark: #A78235;
+    --color-subtle-blue: #2A4858;
+    --color-subtle-blue-light: #EBF3F5;
+    --color-ivory: #FAF9F5;
+    --color-ivory-warm: #F4EFE6;
+    --color-charcoal: #1E242B;
+    --color-charcoal-light: #4A5568;
+  }
+
+  body {
+    background-color: var(--color-ivory);
+    color: var(--color-charcoal);
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, .font-serif-luxury {
+    font-family: 'Cinzel', 'Playfair Display', serif;
+    letter-spacing: 0.02em;
+  }
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #DFBA73 0%, #C9A050 50%, #9F792B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border {
+  border-color: rgba(201, 160, 80, 0.35);
+}
+
+.gold-border-solid {
+  border-color: #C9A050;
+}
